@@ -1,0 +1,15 @@
+{{outlet}}
+<h1>Welcome to the Rentals we got suites and rooms</h1>
+
+<ul>
+{{#each model as |rental|}}
+  {{rental-tile rental=rental destroyRental="destroyRental"}} 
+  {{/each}}
+</ul>
+
+{{new-rental save="save"}}
+
+
+
+{{#link-to 'about'}}About Us{{/link-to}}
+{{#link-to 'contact'}}Contact Us{{/link-to}}
